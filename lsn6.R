@@ -1,4 +1,4 @@
-#Lsn 5
+#Lsn 6
 #ch2, q. 5,7
 
 Outer = function(f,x){
