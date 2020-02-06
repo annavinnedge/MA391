@@ -96,7 +96,6 @@ plot(costnew,col="red")
 # n = number of cars sold
 # P = total profit
 
-library(ma391chinn)
 
 # Step 2: Select the modeling approach
 # Single Variable Optimization
