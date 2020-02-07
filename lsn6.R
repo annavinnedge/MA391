@@ -1,6 +1,21 @@
 #Lsn 6
 #ch2, q. 5,7
 
+#s  = number of 19-inch TVs sold (per year)
+#t  = number of 21-inch TVs sold (per year)
+#p  = selling price of a 19 in set ($)
+#q  = selling price of a 21 in set ($)
+#C  = cost of manufacturing sets ($/yr)
+#R  = revenue from sale of sets ($/yr)
+#P  = profit from the sale of sets ($/yr)
+
+#p  - selling price of 19in set is affected by the number of 19in & 21in TV sets sold:  p=339−0.01s−0.003t 
+#q  - selling price of 21in set is affected by the number of 19in & 21in TV sets sold:  q=339−0.004s−0.01t 
+#R  - revenue is made only from selling these two TV sets:  R=ps+qt 
+#C  - there is a fixed cost and enough of other materials not to cause any additional cost for making more sets:  C=400000+195s+225t 
+#P=R−C 
+#s≥0 
+#t≥0
 Outer = function(f,x){
   n1 = length(x[[1]])
   n2 = length(x[[2]])
