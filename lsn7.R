@@ -23,6 +23,23 @@ obj=function(x){((10000*(1+0.5*x[1]))+200*x[2])*(950-100*x[1])-(700*(10000*(1+0.
 
 #help (Outer)
 
+
+
+Outer = function(f,x){
+  n1 = length(x[[1]])
+  n2 = length(x[[2]])
+  res = matrix(0,nrow=n1,ncol=n2)
+  rownames(res) = x[[1]]
+  colnames(res) = x[[2]]
+  for (i in 1:n1){
+    for (j in 1:n2){
+      res[i,j]=f(c(x[[1]][[i]],x[[2]][[j]]))
+    }
+  }
+  return(res)
+}
+
+
 obj = function(x){(10*x[1]^(0.6)*x[2]^(0.4))*(-1)}
 
 
